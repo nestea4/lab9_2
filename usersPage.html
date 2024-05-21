@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Find Friends</div>
+        <button id="logoutButton">Logout</button>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <aside id="sidebar">
+        <div class="search">
+          <input type="text" id="searchInput" placeholder="Search users" />
+        </div>
+        <div class="sort">
+          <span>SORT</span>
+          <label>By name:</label>
+          <div>
+            <button id="sortNameAsc">Name A-Z</button>
+            <button id="sortNameDesc">Name Z-A</button>
+          </div>
+
+          <label>By age:</label>
+          <div>
+            <button id="sortAgeAsc">Ascending</button>
+            <button id="sortAgeDesc">Descending</button>
+          </div>
+
+          <label>By registration date:</label>
+          <div>
+            <button id="sortRegisteredAsc">Ascending</button>
+            <button id="sortRegisteredDesc">Descending</button>
+          </div>
+        </div>
+        <div class="filter">
+          <span>FILTER</span>
+          <input type="text" id="filterName" placeholder="Filter by Name" />
+          <input type="number" id="filterAge" placeholder="Filter by Age" />
+          <input
+            type="text"
+            id="filterLocation"
+            placeholder="Filter by Location"
+          />
+          <input type="text" id="filterEmail" placeholder="Filter by Email" />
+          <div class="radioButtons">
+            <input type="radio" id="all" name="gender" value="all" checked />
+            <label for="all">All</label>
+
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </div>
+          <button id="resetButton">Reset</button>
+        </div>
+      </aside>
+
+      <section id="userCards">
+        <div id="cardContainer"></div>
+      </section>
+      <!-- Модальне вікно -->
+      <div id="noResultsModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>No users found</p>
+        </div>
+      </div>
+    </main>
+    <script src="./script2.js"></script>
+  </body>
+</html>

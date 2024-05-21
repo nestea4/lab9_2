@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+  
+    <div class="form-container">
+      <div class="tabs">
+        <div class="active">Signup</div>
+        <div>Login</div>
+      </div>
+      <div class="form">
+        <div class="signup active">
+          <h2>Create an account</h2>
+          <form id="signupForm">
+            <div class="form-input">
+              <label>Username</label>
+              <input type="text" placeholder="Enter username" id="signupUsername" name="username" />
+            </div>
+            <div class="form-input">
+              <label>Email</label>
+              <input type="email" placeholder="Enter email" id="signupEmail" name="email" />
+            </div>
+            <div class="form-input">
+              <label>Password</label>
+              <input class="password" type="password" placeholder="Enter password" id="signupPassword" name="password" />
+              <i class="fa-solid fa-eye-slash" id="show-password"></i>
+            </div>
+            <div class="form-input">
+              <label>Confirm password</label>
+              <input class="password" type="password" placeholder="Enter password" id="signupConfirmPassword" name="confirmPassword" />
+              <i class="fa-solid fa-eye-slash" id="show-password"></i>
+            </div>
+            <div class="form-input">
+              <button id="signupButton" type="submit">Signup</button>
+              <div class="loader" style="display: none;"></div>
+            </div>
+          </form>
+        </div>
+        <div class="login">
+          <h2>Login here</h2>
+          <form id="loginForm">
+            <div class="form-input">
+              <label>Username</label>
+              <input type="text" placeholder="Enter username" id="loginUsername" name="username" />
+            </div>
+            <div class="form-input">
+              <label>Password</label>
+              <input class="password" type="password" placeholder="Enter password" id="loginPassword" name="password" />
+              <i class="fa-solid fa-eye-slash" id="show-password"></i>
+            </div>
+            <div class="form-input">
+              <button id="loginButton" type="submit">Login</button>
+              <div class="loader" style="display: none;"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="toaster-container"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
